@@ -1,0 +1,172 @@
+{
+  "kind": "정합 + 64px 대응 ROI CNN 합성 실험",
+  "created_at": "2026-10-29T06:13:19.710829+00:00",
+  "production_ready": false,
+  "split_counts": {
+    "train": 31,
+    "calibration": 11,
+    "test": 11
+  },
+  "pair_counts": {
+    "train": 458,
+    "calibration": 154,
+    "test": 162
+  },
+  "alignment_rejected_count": 37,
+  "threshold": 0.8820919698487824,
+  "threshold_rule": "validation F1 maximum subject to FPR <= 5%; tie higher threshold",
+  "test": {
+    "n": 162,
+    "accuracy": 0.8148148148148148,
+    "precision": 0.9680851063829787,
+    "recall": 0.7711864406779662,
+    "f1": 0.8584905660377359,
+    "confusion_matrix": [
+      [
+        41,
+        3
+      ],
+      [
+        27,
+        91
+      ]
+    ],
+    "auroc": 0.9728428351309708,
+    "normal_alarm_rate": 0.06818181818181818
+  },
+  "training_seconds": 2.1907634579984006,
+  "best_epoch": 30,
+  "history": [
+    {
+      "epoch": 1,
+      "validation_bce": 0.5957984103640188
+    },
+    {
+      "epoch": 2,
+      "validation_bce": 0.5461986099909625
+    },
+    {
+      "epoch": 3,
+      "validation_bce": 0.4621023254636616
+    },
+    {
+      "epoch": 4,
+      "validation_bce": 0.3863792557441446
+    },
+    {
+      "epoch": 5,
+      "validation_bce": 0.3459067876697556
+    },
+    {
+      "epoch": 6,
+      "validation_bce": 0.333224030426417
+    },
+    {
+      "epoch": 7,
+      "validation_bce": 0.3231410587509259
+    },
+    {
+      "epoch": 8,
+      "validation_bce": 0.3154497904234685
+    },
+    {
+      "epoch": 9,
+      "validation_bce": 0.30795612619092855
+    },
+    {
+      "epoch": 10,
+      "validation_bce": 0.3037982203214907
+    },
+    {
+      "epoch": 11,
+      "validation_bce": 0.2970343251103318
+    },
+    {
+      "epoch": 12,
+      "validation_bce": 0.2911183091870467
+    },
+    {
+      "epoch": 13,
+      "validation_bce": 0.285276392339721
+    },
+    {
+      "epoch": 14,
+      "validation_bce": 0.2824449996202891
+    },
+    {
+      "epoch": 15,
+      "validation_bce": 0.27556978989513764
+    },
+    {
+      "epoch": 16,
+      "validation_bce": 0.270614684146443
+    },
+    {
+      "epoch": 17,
+      "validation_bce": 0.2664423962665906
+    },
+    {
+      "epoch": 18,
+      "validation_bce": 0.26284262814352694
+    },
+    {
+      "epoch": 19,
+      "validation_bce": 0.2585738411460042
+    },
+    {
+      "epoch": 20,
+      "validation_bce": 0.2571132010856108
+    },
+    {
+      "epoch": 21,
+      "validation_bce": 0.25178556346832665
+    },
+    {
+      "epoch": 22,
+      "validation_bce": 0.25515892903756
+    },
+    {
+      "epoch": 23,
+      "validation_bce": 0.24894074987173054
+    },
+    {
+      "epoch": 24,
+      "validation_bce": 0.24357848212296282
+    },
+    {
+      "epoch": 25,
+      "validation_bce": 0.2408207176770227
+    },
+    {
+      "epoch": 26,
+      "validation_bce": 0.23784444159421791
+    },
+    {
+      "epoch": 27,
+      "validation_bce": 0.23926003738103396
+    },
+    {
+      "epoch": 28,
+      "validation_bce": 0.23652832825596254
+    },
+    {
+      "epoch": 29,
+      "validation_bce": 0.23235990213449983
+    },
+    {
+      "epoch": 30,
+      "validation_bce": 0.23125459783701294
+    }
+  ],
+  "test_unit": "ROI pair, not image; synthetic labels only",
+  "limitations": [
+    "4개 고대비 ROI만 시험; 전체 이미지 결함 검출 아님",
+    "이동 정합만 지원, 회전·원근·크기 변화 지원 안함",
+    "동일 시안의 합성 변형으로 실제 사진 평가 아님",
+    "같은 원본 파생 ROI는 독립 표본 아님",
+    "정합 실패 제외 후 지표; 실패 수 별도 기록",
+    "기존 시험 시안 재사용; 신규 독립 평가 필요"
+  ],
+  "excluded_pair_count": 74,
+  "unchanged_variant_count": 37
+}

@@ -1,0 +1,9 @@
+[project]
+name = "yn-printing-ml"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["fastapi", "uvicorn", "numpy", "scikit-learn", "pillow", "scipy", "openpyxl", "python-multipart", "joblib", "pypdfium2"]
+[dependency-groups]
+dev = ["pytest", "httpx"]
+[tool.pytest.ini_options]
+pythonpath = ["."]

@@ -1,0 +1,5 @@
+{
+  "candidate": "kernel5",
+  "rule": "validation F1 desc, parameter count asc, name asc",
+  "data_sha256": "b428c46ee530853601af43076345004947484d22d983900a8d8a00274b60ea5e"
+}

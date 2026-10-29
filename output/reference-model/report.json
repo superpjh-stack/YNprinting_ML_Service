@@ -1,0 +1,38 @@
+{
+  "kind": "정상 PDF 시안 전용 이상탐지 실험",
+  "algorithm": "IsolationForest",
+  "feature_version": "reference-patches-v1",
+  "created_at": "2026-10-29T04:39:39.290870+00:00",
+  "source_count": 53,
+  "split_counts": {
+    "train": 31,
+    "calibration": 11,
+    "test": 11
+  },
+  "train_patch_count": 496,
+  "threshold": 0.46471428567038103,
+  "threshold_rule": "calibration image score 95th percentile, higher; alarm when score > threshold",
+  "test": {
+    "normal_reference_count": 11,
+    "flagged_count": 1,
+    "reference_alarm_rate": 0.09090909090909091,
+    "accuracy": null,
+    "precision": null,
+    "recall": null,
+    "f1": null
+  },
+  "defect_photo_pair_candidates": 232,
+  "defect_photos_evaluated": 0,
+  "production_ready": false,
+  "python": "3.12.13",
+  "sklearn": "1.6.1",
+  "seed": 42,
+  "manifest_sha256": "429adce9099334571fe1d7a41ab42414bb3eafef34d59a223428d9722ab0b5e2",
+  "limitations": [
+    "정상 기준은 사용자가 지정한 PDF 시안이며 물리적 정상 촬영본이 아니다.",
+    "재단선·분판·치수 및 도메인 차이를 학습할 수 있다.",
+    "정합·OCR·결함 유형/위치 검출 모델이 아니다.",
+    "실제 불량 검수와 정상 실촬영 시험이 없어 Accuracy/Recall/F1은 산출하지 않았다.",
+    "목형 칼날에 사용할 수 없다."
+  ]
+}

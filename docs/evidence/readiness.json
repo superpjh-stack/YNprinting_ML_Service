@@ -1,0 +1,60 @@
+{
+  "total": 267,
+  "unassigned": 267,
+  "cleaned": 267,
+  "featured": 267,
+  "overlay_pending": 267,
+  "reviewed": 0,
+  "services": [
+    {
+      "service": "plate",
+      "total": 0,
+      "eligible": 0,
+      "reasons": [
+        "검수·정제·피처 완료 표본이 최소 12개 필요합니다 (개발용 최소 조건).",
+        "독립 그룹이 최소 6개 필요합니다.",
+        "OK 표본이 최소 3개 독립 그룹에 필요합니다.",
+        "NG 표본이 최소 3개 독립 그룹에 필요합니다."
+      ],
+      "ready": false
+    },
+    {
+      "service": "die",
+      "total": 0,
+      "eligible": 0,
+      "reasons": [
+        "검수·정제·피처 완료 표본이 최소 12개 필요합니다 (개발용 최소 조건).",
+        "독립 그룹이 최소 6개 필요합니다.",
+        "OK 표본이 최소 3개 독립 그룹에 필요합니다.",
+        "NG 표본이 최소 3개 독립 그룹에 필요합니다."
+      ],
+      "ready": false
+    }
+  ],
+  "runs": [],
+  "feature_names": [
+    "brightness",
+    "contrast",
+    "edge_density",
+    "laplacian_variance",
+    "dark_fraction",
+    "light_fraction",
+    "gray_hist_0",
+    "gray_hist_1",
+    "gray_hist_2",
+    "gray_hist_3",
+    "gray_hist_4",
+    "gray_hist_5",
+    "gray_hist_6",
+    "gray_hist_7",
+    "gray_hist_8",
+    "gray_hist_9",
+    "gray_hist_10",
+    "gray_hist_11",
+    "gray_hist_12",
+    "gray_hist_13",
+    "gray_hist_14",
+    "gray_hist_15"
+  ],
+  "limitation": "전체 이미지 OK/NG 기준모델. OCR·결함 위치 검출은 아직 연결되지 않았습니다."
+}

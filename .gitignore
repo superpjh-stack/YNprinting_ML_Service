@@ -1,0 +1,18 @@
+.venv/
+.runtime/
+__pycache__/
+.pytest_cache/
+node_modules/
+dist/
+.env
+.DS_Store
+# Source artwork and customer-specific data inventories remain local.
+output/reference-images/
+output/yn-reference-images.zip
+output/**/dataset.json
+output/**/photo-alignment-audit.json
+output/**/example_*.png
+docs/evidence/source-inventory.json
+docs/evidence/folder-audit.json
+docs/evidence/label-review-manifest.csv
+docs/collection/review-queue.json
